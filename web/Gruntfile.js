@@ -1,6 +1,13 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    'http-server': {
+        'dev': {
+            root: './',
+            port: 8080,
+            host: '127.0.0.1'
+        }
+    },
     sass: {
       production: {
         files: {
@@ -85,6 +92,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-htmlcompressor');
+  grunt.loadNpmTasks('grunt-http-server');
 
   grunt.registerTask('default',['watch']);
   grunt.registerTask('image',['imagemin']);

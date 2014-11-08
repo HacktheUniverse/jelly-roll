@@ -23,12 +23,32 @@
       width: '379',
       videoId: 'PSZxmZmBfnU'
     });
-<<<<<<< HEAD
     player = new YT.Player('ytplayer_4', {
       height: '251',
       width: '379',
       videoId: 'fK1MwhEDjHg'
     });
-=======
->>>>>>> 9664782bdd563d506a1c83b5df07e4c3dfb3943b
-  } 
+  }
+
+  // Snap 'em panels!
+  var options = {
+  $menu: false,
+  menuSelector: 'a',
+  panelSelector: '.slide',
+  namespace: '.panelSnap',
+  onSnapStart: function(){},
+  onSnapFinish: function(){},
+  onActivate: function(){},
+  directionThreshold: 50,
+  slideSpeed: 200,
+  keyboardNavigation: {
+    enabled: true,
+    nextPanelKey: 40,
+    previousPanelKey: 38,
+    wrapAround: true
+  }
+};
+
+  jQuery(function($) {
+    $('body').panelSnap();
+  });     
