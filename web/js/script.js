@@ -8,37 +8,38 @@
   // YouTube player after the API code downloads.
   var player;
   function onYouTubePlayerAPIReady() {
-    player = new YT.Player('ytplayer_1', {
+    player1 = new YT.Player('ytplayer_1', {
       height: '251',
       width: '379',
+      autoplay: '1',
       videoId: 'HuSHOQ6gv5Y'
     });
-    player = new YT.Player('ytplayer_2', {
+    player2 = new YT.Player('ytplayer_2', {
       height: '251',
       width: '379',
       videoId: 'VyCmeO65M'
     });
-    player = new YT.Player('ytplayer_3', {
+    player3 = new YT.Player('ytplayer_3', {
       height: '251',
       width: '379',
       videoId: 'PSZxmZmBfnU'
     });
-    player = new YT.Player('ytplayer_4', {
+    player4 = new YT.Player('ytplayer_4', {
       height: '251',
       width: '379',
       videoId: 'fK1MwhEDjHg'
     });
-    player = new YT.Player('ytplayer_5', {
+    player5 = new YT.Player('ytplayer_5', {
       height: '251',
       width: '379',
       videoId: 'HKQQAv5svkk'
     });
-    player = new YT.Player('ytplayer_6', {
+    player6 = new YT.Player('ytplayer_6', {
       height: '251',
       width: '379',
       videoId: 'b4nlgDtyoU4'
     });
-    player = new YT.Player('ytplayer_7', {
+    player7 = new YT.Player('ytplayer_7', {
       height: '251',
       width: '379',
       videoId: 'hokNUYM'
@@ -52,7 +53,9 @@
   // panelSelector: 'section',
   // namespace: '.panelSnap',
   // onSnapStart: function(){},
-  // onSnapFinish: function(){},
+  onSnapFinish: function(){
+  	console.log(this.childNodes);
+  },
   // onActivate: function(){},
   directionThreshold: 50,
   slideSpeed: 200,
@@ -66,4 +69,14 @@
 
   jQuery(function($) {
     $('.wrapper').panelSnap(options);
-  });     
+  });
+
+//   //animate the arrow
+//   $arrow = $('#arrow');
+
+// var tl = new TimelineLite();
+// tl.add( TweenLite.to(arrow, 1, {top:-50}) );
+// tl.add( TweenLite.to(arrow, 1, {top:0}) );
+ 
+// //then later, control the whole thing...
+// tl.play();
