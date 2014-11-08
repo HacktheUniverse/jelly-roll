@@ -1,4 +1,3 @@
-@import url("timeline_style.css");
 @import url(http://fonts.googleapis.com/css?family=Arvo:400,700|Open+Sans:400,300,600,700,800);
 body {
   /*	background-image: url('../images/title_slide_GUIDE.png');
@@ -88,5 +87,10 @@ h3, p {
   margin: 50px auto 0 auto; }
   .wrapper .slide_01 p {
     font-weight: 100; }
+.wrapper .long_title {
+  font-size: 36px !important; }
+.wrapper .big_number {
+  font-size: 36px !important;
+  line-height: 30px !important; }
 
 /*# sourceMappingURL=style.css.map */

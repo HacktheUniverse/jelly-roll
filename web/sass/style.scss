@@ -104,6 +104,7 @@ h3, p {
 			}
 		}
 	}
+
 	.slide_01 {
 		color: $white;
 		text-align: center;
@@ -117,5 +118,14 @@ h3, p {
 		p {
 			font-weight: 100;
 		}
+	}
+
+	.long_title {
+		font-size:36px !important;
+	}
+
+	.big_number {
+		font-size:36px !important;
+		line-height: 30px !important;
 	}
 }

@@ -12844,7 +12844,21 @@ if ( typeof Object.create !== 'function' ) {
       width: '379',
       videoId: 'fK1MwhEDjHg'
     });
-
+    player = new YT.Player('ytplayer_5', {
+      height: '251',
+      width: '379',
+      videoId: 'HKQQAv5svkk'
+    });
+    player = new YT.Player('ytplayer_6', {
+      height: '251',
+      width: '379',
+      videoId: 'b4nlgDtyoU4'
+    });
+    player = new YT.Player('ytplayer_7', {
+      height: '251',
+      width: '379',
+      videoId: 'hokNUYM'
+    });  
   } 
   
   // Snap 'em panels!
