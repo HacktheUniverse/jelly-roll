@@ -16,10 +16,11 @@ module.exports = function(grunt) {
     concat: {   
       production: {
           src: [
+              'js/libs/jquery.js',  // This specific file
               'js/libs/*.js', // All JS in the libs folder
               'js/script.js'  // This specific file
           ],
-          dest: 'js/build/script-concat.js',
+          dest: 'js/build/script-concat.js', 
       },
       deploy: {
           src: [

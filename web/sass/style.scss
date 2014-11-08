@@ -10,6 +10,14 @@ body {
 	width: 1280px;
 }
 
+h1, h2 {
+	font-family: arvo;
+}
+
+p {
+	font-family: open sans;
+}
+
 .wrapper {
 	.top {
 		display: flex;
@@ -35,6 +43,54 @@ body {
 			margin-left: 13px;
 			img + img {
 				margin-top: 10px;
+			}
+		}
+	}
+	.bottom {
+		display: flex;
+		.photo {
+				margin: 0 0 0 120px;
+				.header {
+					display: flex;
+					margin:0;
+					align-items: center;
+					z-index: 2;
+					position: absolute;
+				h1 {
+					color: white;
+					text-transform: uppercase;
+					font-size: 50px;
+				}
+				.light_years {
+					background-image: url('../images/white_circle.png');
+					width:184px;
+					height: 184px;
+					text-align: center;
+					margin-left: -20px;
+					h2 {
+						font-size: 50px;
+						margin-bottom: 0;
+						line-height: 40px;
+						margin-top: 53px;
+					}
+					p {
+						font-weight: 100;
+						margin: 5px 0 0 0;
+					}
+				}
+			}
+			img {
+				margin-top: -65px;
+				z-index: 0;
+				margin-top: 121px;
+			}
+		}
+		.text {
+			width: 510px;
+			margin: 105px 0 0 50px;
+			p {
+				color: white;
+				font-size: 18px;
 			}
 		}
 	}
