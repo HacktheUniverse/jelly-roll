@@ -12864,12 +12864,12 @@ if ( typeof Object.create !== 'function' ) {
   // Snap 'em panels!
   var options = {
   $menu: false,
-  menuSelector: 'a',
-  panelSelector: '.slide',
-  namespace: '.panelSnap',
-  onSnapStart: function(){},
-  onSnapFinish: function(){},
-  onActivate: function(){},
+  // menuSelector: 'a',
+  // panelSelector: 'section',
+  // namespace: '.panelSnap',
+  // onSnapStart: function(){},
+  // onSnapFinish: function(){},
+  // onActivate: function(){},
   directionThreshold: 50,
   slideSpeed: 200,
   keyboardNavigation: {
@@ -12881,5 +12881,5 @@ if ( typeof Object.create !== 'function' ) {
 };
 
   jQuery(function($) {
-    // $('body').panelSnap();
+    $('.wrapper').panelSnap(options);
   });     
