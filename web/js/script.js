@@ -14,6 +14,11 @@
       autoplay: '1',
       videoId: 'HuSHOQ6gv5Y'
     });
+    player = new YT.Player('ytplayer_1_3', {
+      height: '251',
+      width: '379',
+      videoId: 'oXNQgpCflIs'
+    });
     player2 = new YT.Player('ytplayer_2', {
       height: '251',
       width: '379',
@@ -45,7 +50,24 @@
       videoId: 'hokNUYM'
     });  
   } 
-  
+
+$( "#button_1" ).click(function() {
+    $( "#ytplayer_1" ).replaceWith( "<div id='ytplayer_1'></div>");
+    player = new YT.Player('ytplayer_1', {
+        height: '251',
+        width: '379',
+        videoId: 'pYSC6623K7I'
+    });
+ });
+
+$( "#button_2" ).click(function() {
+    $( "#ytplayer_1" ).replaceWith( "<div id='ytplayer_1'></div>");
+    player = new YT.Player('ytplayer_1', {
+        height: '251',
+        width: '379',
+        videoId: 'oXNQgpCflIs'
+    });
+});
   // Snap 'em panels!
   var options = {
   $menu: false,
@@ -57,7 +79,7 @@
   	console.log(this.childNodes);
   },
   // onActivate: function(){},
-  directionThreshold: 50,
+  directionThreshold: 100,
   slideSpeed: 200,
   keyboardNavigation: {
     enabled: true,

@@ -10306,54 +10306,6 @@ if ( typeof noGlobal === strundefined ) {
 return jQuery;
 
 }));
-/*
-* FlowType.JS v1.1
-* Copyright 2013-2014, Simple Focus http://simplefocus.com/
-*
-* FlowType.JS by Simple Focus (http://simplefocus.com/)
-* is licensed under the MIT License. Read a copy of the
-* license in the LICENSE.txt file or at
-* http://choosealicense.com/licenses/mit
-*
-* Thanks to Giovanni Difeterici (http://www.gdifeterici.com/)
-*/
-
-(function($) {
-   $.fn.flowtype = function(options) {
-
-// Establish default settings/variables
-// ====================================
-      var settings = $.extend({
-         maximum   : 9999,
-         minimum   : 1,
-         maxFont   : 9999,
-         minFont   : 1,
-         fontRatio : 35
-      }, options),
-
-// Do the magic math
-// =================
-      changes = function(el) {
-         var $el = $(el),
-            elw = $el.width(),
-            width = elw > settings.maximum ? settings.maximum : elw < settings.minimum ? settings.minimum : elw,
-            fontBase = width / settings.fontRatio,
-            fontSize = fontBase > settings.maxFont ? settings.maxFont : fontBase < settings.minFont ? settings.minFont : fontBase;
-         $el.css('font-size', fontSize + 'px');
-      };
-
-// Make the magic visible
-// ======================
-      return this.each(function() {
-      // Context for resize callback
-         var that = this;
-      // Make changes upon resize
-         $(window).resize(function(){changes(that);});
-      // Set changes on load
-         changes(this);
-      });
-   };
-}(jQuery));
 /*! jQuery UI - v1.11.2 - 2014-11-08
 * http://jqueryui.com
 * Includes: core.js, widget.js, mouse.js, slider.js
@@ -12878,6 +12830,11 @@ if ( typeof Object.create !== 'function' ) {
       autoplay: '1',
       videoId: 'HuSHOQ6gv5Y'
     });
+    player = new YT.Player('ytplayer_1_3', {
+      height: '251',
+      width: '379',
+      videoId: 'oXNQgpCflIs'
+    });
     player2 = new YT.Player('ytplayer_2', {
       height: '251',
       width: '379',
@@ -12909,7 +12866,24 @@ if ( typeof Object.create !== 'function' ) {
       videoId: 'hokNUYM'
     });  
   } 
-  
+
+$( "#button_1" ).click(function() {
+    $( "#ytplayer_1" ).replaceWith( "<div id='ytplayer_1'></div>");
+    player = new YT.Player('ytplayer_1', {
+        height: '251',
+        width: '379',
+        videoId: 'pYSC6623K7I'
+    });
+ });
+
+$( "#button_2" ).click(function() {
+    $( "#ytplayer_1" ).replaceWith( "<div id='ytplayer_1'></div>");
+    player = new YT.Player('ytplayer_1', {
+        height: '251',
+        width: '379',
+        videoId: 'oXNQgpCflIs'
+    });
+});
   // Snap 'em panels!
   var options = {
   $menu: false,
@@ -12921,7 +12895,7 @@ if ( typeof Object.create !== 'function' ) {
   	console.log(this.childNodes);
   },
   // onActivate: function(){},
-  directionThreshold: 50,
+  directionThreshold: 100,
   slideSpeed: 200,
   keyboardNavigation: {
     enabled: true,
