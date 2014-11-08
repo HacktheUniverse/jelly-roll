@@ -12060,12 +12060,10 @@ var slider = $.widget( "ui.slider", $.ui.mouse, {
       width: '379',
       videoId: 'PSZxmZmBfnU'
     });
-<<<<<<< HEAD
     player = new YT.Player('ytplayer_4', {
       height: '251',
       width: '379',
       videoId: 'fK1MwhEDjHg'
     });
-=======
->>>>>>> 9664782bdd563d506a1c83b5df07e4c3dfb3943b
+
   } 
