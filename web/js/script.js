@@ -49,9 +49,6 @@
       videoId: 'hokNUYM'
     });  
   } 
-  
-
-  }
 
  $( "#button_1" ).click(function() {
  console.log("hi");
