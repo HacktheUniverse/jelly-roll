@@ -13,6 +13,11 @@
       width: '379',
       videoId: 'HuSHOQ6gv5Y'
     });
+    player = new YT.Player('ytplayer_1_3', {
+      height: '251',
+      width: '379',
+      videoId: 'oXNQgpCflIs'
+    });
     player = new YT.Player('ytplayer_2', {
       height: '251',
       width: '379',
@@ -45,6 +50,19 @@
     });  
   } 
   
+
+  }
+
+ $( "#button_1" ).click(function() {
+ console.log("hi");
+$( "#ytplayer_1" ).replaceWith( "<div id='ytplayer_1'></div>");
+player = new YT.Player('ytplayer_1', {
+height: '251',
+  width: '379',
+  videoId: 'pYSC6623K7I'
+});
+ });
+
   // Snap 'em panels!
   var options = {
   $menu: false,

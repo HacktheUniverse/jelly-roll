@@ -10306,9 +10306,6 @@ if ( typeof noGlobal === strundefined ) {
 return jQuery;
 
 }));
-<<<<<<< HEAD:web/deploy/js/build/script-concat.js
-console.log("hello world");
-=======
 /*! jQuery UI - v1.11.2 - 2014-11-08
 * http://jqueryui.com
 * Includes: core.js, widget.js, mouse.js, slider.js
@@ -12852,6 +12849,23 @@ if ( typeof Object.create !== 'function' ) {
       width: '379',
       videoId: 'fK1MwhEDjHg'
     });
+    player = new YT.Player('ytplayer_5', {
+      height: '251',
+      width: '379',
+      videoId: 'HKQQAv5svkk'
+    });
+    player = new YT.Player('ytplayer_6', {
+      height: '251',
+      width: '379',
+      videoId: 'b4nlgDtyoU4'
+    });
+    player = new YT.Player('ytplayer_7', {
+      height: '251',
+      width: '379',
+      videoId: 'hokNUYM'
+    });  
+  } 
+  
 
   }
 
@@ -12868,12 +12882,12 @@ height: '251',
   // Snap 'em panels!
   var options = {
   $menu: false,
-  menuSelector: 'a',
-  panelSelector: '.slide',
-  namespace: '.panelSnap',
-  onSnapStart: function(){},
-  onSnapFinish: function(){},
-  onActivate: function(){},
+  // menuSelector: 'a',
+  // panelSelector: 'section',
+  // namespace: '.panelSnap',
+  // onSnapStart: function(){},
+  // onSnapFinish: function(){},
+  // onActivate: function(){},
   directionThreshold: 50,
   slideSpeed: 200,
   keyboardNavigation: {
@@ -12885,6 +12899,5 @@ height: '251',
 };
 
   jQuery(function($) {
-    // $('body').panelSnap();
+    $('.wrapper').panelSnap(options);
   });     
->>>>>>> kill me:web/js/build/script-concat.js
