@@ -12921,6 +12921,23 @@ $( "#oil_spill" ).click(function() {
     });
 });
 
+$( "#button_7_1" ).click(function() {
+    $( "#ytplayer_6" ).replaceWith( "<div id='ytplayer_6'></div>");
+    player = new YT.Player('ytplayer_6', {
+        height: '251',
+        width: '379',
+        videoId: '1solJeiIozc'
+    });
+});
+$( "#button_7_2" ).click(function() {
+    $( "#ytplayer_6" ).replaceWith( "<div id='ytplayer_6'></div>");
+    player = new YT.Player('ytplayer_6', {
+        height: '251',
+        width: '379',
+        videoId: 'b4nlgDtyoU4'
+    });
+});
+
   // Snap 'em panels!
   var options = {
   $menu: false,
