@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -26,3 +27,7 @@ build/Release
 # Commenting this out is preferred by some people, see
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
 node_modules
+=======
+*.idea
+node_modules
+>>>>>>> 9664782bdd563d506a1c83b5df07e4c3dfb3943b
