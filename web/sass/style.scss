@@ -4,8 +4,8 @@ $gray: #212121;
 $white: #fff;
 
 body {
-	background-image: url('../images/slide_01_GUIDE.png');
-	background-color: $gray;
+/*	background-image: url('../images/title_slide_GUIDE.png');
+*/	background-color: $gray;
 	height: 850px;
 	width: 1280px;
 }
@@ -14,83 +14,104 @@ h1, h2 {
 	font-family: arvo;
 }
 
-p {
+h3, p {
 	font-family: open sans;
 }
 
+.slide + .slide {
+	margin-top: 200px;
+}
+
 .wrapper {
-	.top {
-		display: flex;
-		align-items: center;
-		margin: 74px 0 0 340px;
-		.calendar {
-			h1 {
-				font-family: arvo;
-				font-size: 33px;
-				color: $white;
-				position: absolute;
-				margin: 58px 0 0 24px;
-				letter-spacing: 2.25px;
-			}
+	.slide_01 {
+		color: $white;
+		text-align: center;
+		font-size: 35px;
+		text-transform: uppercase;
+		width: 740px;
+		margin: 50px auto 0 auto;
+		h3 {
+
 		}
-		.video_main {
-			margin-left: 48px;
-		}
-		.thumbs {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			margin-left: 13px;
-			img + img {
-				margin-top: 10px;
-			}
+		p {
+			font-weight: 100;
 		}
 	}
-	.bottom {
-		display: flex;
-		.photo {
-				margin: 0 0 0 120px;
-				.header {
-					display: flex;
-					margin:0;
-					align-items: center;
-					z-index: 2;
-					position: absolute;
+	.slide_02 {
+/*		display: none;
+*/		.top {
+			display: flex;
+			align-items: center;
+			margin: 74px 0 0 340px;
+			.calendar {
 				h1 {
-					color: white;
-					text-transform: uppercase;
-					font-size: 50px;
-				}
-				.light_years {
-					background-image: url('../images/white_circle.png');
-					width:184px;
-					height: 184px;
-					text-align: center;
-					margin-left: -20px;
-					h2 {
-						font-size: 50px;
-						margin-bottom: 0;
-						line-height: 40px;
-						margin-top: 53px;
-					}
-					p {
-						font-weight: 100;
-						margin: 5px 0 0 0;
-					}
+					font-family: arvo;
+					font-size: 33px;
+					color: $white;
+					position: absolute;
+					margin: 58px 0 0 24px;
+					letter-spacing: 2.25px;
 				}
 			}
-			img {
-				margin-top: -65px;
-				z-index: 0;
-				margin-top: 121px;
+			.video_main {
+				margin-left: 48px;
+			}
+			.thumbs {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				margin-left: 13px;
+				img + img {
+					margin-top: 10px;
+				}
 			}
 		}
-		.text {
-			width: 510px;
-			margin: 105px 0 0 50px;
-			p {
-				color: white;
-				font-size: 18px;
+		.bottom {
+			display: flex;
+			.photo {
+					margin: 0 0 0 120px;
+					.header {
+						display: flex;
+						margin:0;
+						align-items: center;
+						z-index: 2;
+						position: absolute;
+					h1 {
+						color: white;
+						text-transform: uppercase;
+						font-size: 50px;
+					}
+					.light_years {
+						background-image: url('../images/white_circle.png');
+						width:184px;
+						height: 184px;
+						text-align: center;
+						margin-left: -20px;
+						h2 {
+							font-size: 50px;
+							margin-bottom: 0;
+							line-height: 40px;
+							margin-top: 53px;
+						}
+						p {
+							font-weight: 100;
+							margin: 5px 0 0 0;
+						}
+					}
+				}
+				img {
+					margin-top: -65px;
+					z-index: 0;
+					margin-top: 121px;
+				}
+			}
+			.text {
+				width: 510px;
+				margin: 105px 0 0 50px;
+				p {
+					color: white;
+					font-size: 18px;
+				}
 			}
 		}
 	}
