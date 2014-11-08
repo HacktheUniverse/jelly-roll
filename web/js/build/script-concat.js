@@ -12865,7 +12865,7 @@ if ( typeof Object.create !== 'function' ) {
   var options = {
   $menu: false,
   // menuSelector: 'a',
-  panelSelector: $('.slide'),
+  // panelSelector: 'section',
   // namespace: '.panelSnap',
   // onSnapStart: function(){},
   // onSnapFinish: function(){},
@@ -12881,5 +12881,5 @@ if ( typeof Object.create !== 'function' ) {
 };
 
   jQuery(function($) {
-    $('.wrapper').panelSnap();
+    $('.wrapper').panelSnap(options);
   });     
