@@ -76,7 +76,7 @@ $( "#button_2" ).click(function() {
   // onSnapStart: function(){},
   // onSnapFinish: function(){},
   // onActivate: function(){},
-  directionThreshold: 50,
+  directionThreshold: 100,
   slideSpeed: 200,
   keyboardNavigation: {
     enabled: true,
