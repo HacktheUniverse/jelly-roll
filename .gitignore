@@ -28,3 +28,6 @@ build/Release
 *.idea
 .DS_Store
 node_modules
+.sass-cache
+css/
+js/build/

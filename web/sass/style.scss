@@ -23,7 +23,15 @@ h3, p {
 }
 
 .wrapper {
+	position: absolute;
+	overflow: scroll;
+	height: 100%;
+	width: 100%;
 	.slide {
+		position: relative;
+		overflow: hidden;
+		height: 100%;
+		width: 100%;
 		margin-bottom: 50px;
 		.top {
 			display: flex;

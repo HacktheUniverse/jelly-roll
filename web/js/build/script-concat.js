@@ -12864,22 +12864,22 @@ if ( typeof Object.create !== 'function' ) {
   // Snap 'em panels!
   var options = {
   $menu: false,
-  menuSelector: 'a',
-  panelSelector: '.slide',
-  namespace: '.panelSnap',
-  onSnapStart: function(){},
-  onSnapFinish: function(){},
-  onActivate: function(){},
+  // menuSelector: 'a',
+  panelSelector: $('.slide'),
+  // namespace: '.panelSnap',
+  // onSnapStart: function(){},
+  // onSnapFinish: function(){},
+  // onActivate: function(){},
   directionThreshold: 50,
   slideSpeed: 200,
-  keyboardNavigation: {
-    enabled: true,
-    nextPanelKey: 40,
-    previousPanelKey: 38,
-    wrapAround: true
-  }
+  // keyboardNavigation: {
+  //   enabled: true,
+  //   nextPanelKey: 40,
+  //   previousPanelKey: 38,
+  //   wrapAround: true
+  // }
 };
 
   jQuery(function($) {
-    // $('body').panelSnap();
+    $('.wrapper').panelSnap();
   });     
