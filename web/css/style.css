@@ -3,7 +3,6 @@ body {
   /*	background-image: url('../images/title_slide_GUIDE.png');
   */
   background-color: #212121;
-  height: 850px;
   width: 1280px; }
 
 h1, h2 {
@@ -55,6 +54,8 @@ h3, p {
         flex-direction: column;
         justify-content: space-between;
         margin-left: 13px; }
+        .wrapper .slide .top .thumbs img {
+          cursor: pointer; }
         .wrapper .slide .top .thumbs img + img {
           margin-top: 10px; }
     .wrapper .slide .bottom {

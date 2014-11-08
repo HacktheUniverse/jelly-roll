@@ -12884,6 +12884,43 @@ $( "#button_2" ).click(function() {
         videoId: 'oXNQgpCflIs'
     });
 });
+
+$( "#button_mlb" ).click(function() {
+    $( "#ytplayer_3" ).replaceWith( "<div id='ytplayer_3'></div>");
+    player = new YT.Player('ytplayer_3', {
+        height: '251',
+        width: '379',
+        videoId: 'jApD3VIZu_4'
+    });
+});
+
+$( "#button_poland" ).click(function() {
+    $( "#ytplayer_3" ).replaceWith( "<div id='ytplayer_3'></div>");
+    player = new YT.Player('ytplayer_3', {
+        height: '251',
+        width: '379',
+        videoId: 'bpYpbiIZDGw'
+    });
+});
+
+$( "#button_earthquake" ).click(function() {
+    $( "#ytplayer_4" ).replaceWith( "<div id='ytplayer_4'></div>");
+    player = new YT.Player('ytplayer_4', {
+        height: '251',
+        width: '379',
+        videoId: 'Z8ExMR0c0aM'
+    });
+});
+
+$( "#oil_spill" ).click(function() {
+    $( "#ytplayer_4" ).replaceWith( "<div id='ytplayer_4'></div>");
+    player = new YT.Player('ytplayer_4', {
+        height: '251',
+        width: '379',
+        videoId: 'VaRdUHrUnBs'
+    });
+});
+
   // Snap 'em panels!
   var options = {
   $menu: false,
