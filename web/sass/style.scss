@@ -1,0 +1,41 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700|Open+Sans:400,300,600,700,800);
+
+$gray: #212121;
+$white: #fff;
+
+body {
+	background-image: url('../images/slide_01_GUIDE.png');
+	background-color: $gray;
+	height: 850px;
+	width: 1280px;
+}
+
+.wrapper {
+	.top {
+		display: flex;
+		align-items: center;
+		margin: 74px 0 0 340px;
+		.calendar {
+			h1 {
+				font-family: arvo;
+				font-size: 33px;
+				color: $white;
+				position: absolute;
+				margin: 58px 0 0 24px;
+				letter-spacing: 2.25px;
+			}
+		}
+		.video_main {
+			margin-left: 48px;
+		}
+		.thumbs {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			margin-left: 13px;
+			img + img {
+				margin-top: 10px;
+			}
+		}
+	}
+}
