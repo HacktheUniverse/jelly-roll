@@ -12955,8 +12955,8 @@ $( "#button_5_2" ).click(function() {
 });
   // Snap 'em panels!
   var options = {
-  $menu: false,
-  // menuSelector: 'a',
+  $menu: $('.timeline .points'),
+  // menuSelector: 'div',
   // panelSelector: 'section',
   // namespace: '.panelSnap',
   // onSnapStart: function(){},
