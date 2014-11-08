@@ -12853,7 +12853,7 @@ if ( typeof Object.create !== 'function' ) {
     player5 = new YT.Player('ytplayer_5', {
       height: '251',
       width: '379',
-      videoId: 'HKQQAv5svkk'
+      videoId: 'NzRkszaGBbY'
     });
     player6 = new YT.Player('ytplayer_6', {
       height: '251',
@@ -12937,7 +12937,22 @@ $( "#button_7_2" ).click(function() {
         videoId: 'b4nlgDtyoU4'
     });
 });
-
+$( "#button_5_1" ).click(function() {
+    $( "#ytplayer_5" ).replaceWith( "<div id='ytplayer_5'></div>");
+    player = new YT.Player('ytplayer_5', {
+        height: '251',
+        width: '379',
+        videoId: 'RWGIxK3iPv4'
+    });
+});
+$( "#button_5_2" ).click(function() {
+    $( "#ytplayer_5" ).replaceWith( "<div id='ytplayer_5'></div>");
+    player = new YT.Player('ytplayer_5', {
+        height: '251',
+        width: '379',
+        videoId: 'NzRkszaGBbY'
+    });
+});
   // Snap 'em panels!
   var options = {
   $menu: false,
