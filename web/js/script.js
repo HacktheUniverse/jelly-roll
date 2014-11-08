@@ -49,6 +49,7 @@
       videoId: 'hokNUYM'
     });  
   } 
+<<<<<<< HEAD
 
  $( "#button_1" ).click(function() {
  console.log("hi");
@@ -58,8 +59,26 @@ height: '251',
   width: '379',
   videoId: 'pYSC6623K7I'
 });
+=======
+  
+$( "#button_1" ).click(function() {
+    $( "#ytplayer_1" ).replaceWith( "<div id='ytplayer_1'></div>");
+    player = new YT.Player('ytplayer_1', {
+        height: '251',
+        width: '379',
+        videoId: 'pYSC6623K7I'
+    });
+>>>>>>> button success
  });
 
+$( "#button_2" ).click(function() {
+    $( "#ytplayer_1" ).replaceWith( "<div id='ytplayer_1'></div>");
+    player = new YT.Player('ytplayer_1', {
+        height: '251',
+        width: '379',
+        videoId: 'oXNQgpCflIs'
+    });
+});
   // Snap 'em panels!
   var options = {
   $menu: false,
