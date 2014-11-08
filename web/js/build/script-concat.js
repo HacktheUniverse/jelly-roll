@@ -12048,6 +12048,6 @@ var slider = $.widget( "ui.slider", $.ui.mouse, {
     player = new YT.Player('ytplayer', {
       height: '251',
       width: '379',
-      videoId: 'M7lc1UVf-VE'
+      videoId: 'HuSHOQ6gv5Y'
     });
   } 
