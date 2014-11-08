@@ -11,6 +11,10 @@ h1, h2 {
 h3, p {
   font-family: open sans; }
 
+a {
+  color: inherit;
+  text-decoration: none; }
+
 .slide + .slide {
   margin: 200px 0 0 0; }
 
@@ -43,7 +47,10 @@ h3, p {
   .wrapper .timeline .points {
     float: left;
     color: #eeeeee;
-    padding-right: 5px; }
+    padding-right: 5px;
+    font-family: open sans;
+    font-weight: 100;
+    font-size: 12px; }
   .wrapper .timeline .points .twentyten {
     /*		padding-top: 15px;
     */ }

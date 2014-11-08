@@ -12824,7 +12824,7 @@ if ( typeof Object.create !== 'function' ) {
   // YouTube player after the API code downloads.
   var player;
   function onYouTubePlayerAPIReady() {
-    player1 = new YT.Player('ytplayer_1', {
+    player1 = new YT.Player('ytplayer_1', { 
       height: '251',
       width: '379',
       autoplay: '1',
