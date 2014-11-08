@@ -28,6 +28,24 @@ h3, p {
     background: #1C1C1C; }
   .wrapper section:nth-child(2n) {
     background: #2E2E2E; }
+  .wrapper .timeline {
+    position: fixed;
+    height: 100%;
+    right: 10px;
+    z-index: 99; }
+  .wrapper .timeline .ruler {
+    position: relative;
+    content: '';
+    height: 100%;
+    width: 4px;
+    float: right;
+    background-color: #eeeeee; }
+  .wrapper .timeline .points {
+    float: left;
+    color: #eeeeee;
+    padding-right: 5px; }
+  .wrapper .timeline .points .twentyten {
+    padding-top: 15px; }
   .wrapper .slide {
     position: relative;
     overflow: hidden;

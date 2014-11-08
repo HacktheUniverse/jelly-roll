@@ -26,7 +26,7 @@ h3, p {
 	overflow: scroll;
 	height: 100%;
 	width: 100%;
-	 section {
+	section {
 	    position: relative;
 	    overflow: hidden;
 	    padding-top: 50px;
@@ -36,6 +36,28 @@ h3, p {
 	}
 	section:nth-child(2n) {
 		background: #2E2E2E;
+	}
+	.timeline {
+		position: fixed;
+		height: 100%;
+		right: 10px;
+		z-index: 99;
+	}
+	.timeline .ruler {
+		position: relative;
+		content: '';
+		height: 100%;
+		width: 4px;
+		float: right;
+		background-color: #eeeeee;
+	}
+	.timeline .points {
+		float: left;
+		color: #eeeeee;
+		padding-right: 5px;
+	}
+	.timeline .points .twentyten {
+		padding-top: 15px;
 	}
 	.slide {
 		position: relative;
