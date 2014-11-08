@@ -12045,9 +12045,24 @@ var slider = $.widget( "ui.slider", $.ui.mouse, {
   // YouTube player after the API code downloads.
   var player;
   function onYouTubePlayerAPIReady() {
-    player = new YT.Player('ytplayer', {
+    player = new YT.Player('ytplayer_1', {
       height: '251',
       width: '379',
       videoId: 'HuSHOQ6gv5Y'
+    });
+    player = new YT.Player('ytplayer_2', {
+      height: '251',
+      width: '379',
+      videoId: 'VyCmeO65M'
+    });
+    player = new YT.Player('ytplayer_3', {
+      height: '251',
+      width: '379',
+      videoId: 'PSZxmZmBfnU'
+    });
+    player = new YT.Player('ytplayer_4', {
+      height: '251',
+      width: '379',
+      videoId: 'fK1MwhEDjHg'
     });
   } 
