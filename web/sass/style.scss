@@ -37,7 +37,7 @@ h3, p {
 	section:nth-child(2n) {
 		background: #2E2E2E;
 	}
-	.timeline {
+	.timeline { 
 		position: fixed;
 		height: 100%;
 		right: 10px;
@@ -57,8 +57,25 @@ h3, p {
 		padding-right: 5px;
 	}
 	.timeline .points .twentyten {
-		padding-top: 15px;
+/*		padding-top: 15px;
+*/	}
+	
+	.eightynine {
+		margin-top: 20px;
 	}
+
+	.thirtynine {
+		margin-top: 40px;
+	}
+
+	.fifteeneighty {
+		margin-top: 100px;
+	}
+
+	.fiftythreema {
+		margin-top: 430px;
+	}
+
 	.slide {
 		position: relative;
 		overflow: hidden;

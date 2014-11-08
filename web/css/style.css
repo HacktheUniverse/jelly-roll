@@ -45,7 +45,16 @@ h3, p {
     color: #eeeeee;
     padding-right: 5px; }
   .wrapper .timeline .points .twentyten {
-    padding-top: 15px; }
+    /*		padding-top: 15px;
+    */ }
+  .wrapper .eightynine {
+    margin-top: 20px; }
+  .wrapper .thirtynine {
+    margin-top: 40px; }
+  .wrapper .fifteeneighty {
+    margin-top: 100px; }
+  .wrapper .fiftythreema {
+    margin-top: 430px; }
   .wrapper .slide {
     position: relative;
     overflow: hidden;
